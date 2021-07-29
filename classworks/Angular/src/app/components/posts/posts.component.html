@@ -1,0 +1,13 @@
+<div class="postsWrap">
+
+  <div class="postsList">
+    <ul>
+      <li *ngFor="let post of posts">
+        <app-post [post]="post"></app-post>
+      </li>
+    </ul>
+  </div>
+  <div class="detailsContainer">
+    <router-outlet></router-outlet>
+  </div>
+</div>
